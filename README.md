@@ -8,3 +8,6 @@ Install-Package Microsoft.EntityFrameworkCore.Design
 Install-Package Microsoft.EntityFrameworkCore.Tools
 Install-Package MySqlConnector
 Install-Package Pomelo.EntityFrameworkCore.MySql
+
+dotnet ef migrations add InitialCreate
+Update-Database -verbose
