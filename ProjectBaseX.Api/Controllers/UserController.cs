@@ -66,6 +66,7 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
 
+        [HttpGet]
         public IActionResult Get()
         {
             try

@@ -11,7 +11,7 @@ namespace ProjectBaseX.Infra.Data.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseMySql("Server=servermysqlbasex.mysql.database.azure.com;Port=3306;Database=modelo;Uid=mysqldbuser;Pwd=mysqldbSenha10;SslMode=Preferred");
+                optionsBuilder.UseMySql("Server=servermysqlbasex.mysql.database.azure.com;Port=3306;Database=modelo;Uid=mysqldbuser@servermysqlbasex;Pwd=mysqldbSenha10;SslMode=Preferred");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
