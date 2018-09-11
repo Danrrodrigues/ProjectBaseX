@@ -8,6 +8,7 @@ Será um projeto base para iniciar outros projetos, com um arquitetura escaláve
 * DDD(Design Domain Drive)
 * FluentValidation
 * WebApi
+* Visual Studio 2017
 
 
 
