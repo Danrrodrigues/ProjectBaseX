@@ -11,3 +11,5 @@ Install-Package Pomelo.EntityFrameworkCore.MySql
 
 dotnet ef migrations add InitialCreate
 Update-Database -verbose
+Add-Migration Custom
+Update-Database -verbose

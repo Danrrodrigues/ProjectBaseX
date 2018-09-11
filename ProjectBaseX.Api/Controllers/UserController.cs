@@ -12,6 +12,7 @@ namespace ProjectBaseX.Api.Controllers
     {
         private BaseService<User> service = new BaseService<User>();
 
+        [HttpPost]
         public IActionResult Post([FromBody] User item)
         {
             try
@@ -30,6 +31,7 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
 
+        [HttpPut("{id}")]
         public IActionResult Put([FromBody] User item)
         {
             try
@@ -48,6 +50,7 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
 
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             try
@@ -79,6 +82,7 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
 
+        [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             try
