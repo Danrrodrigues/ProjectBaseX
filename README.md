@@ -6,7 +6,7 @@ Será um projeto base para iniciar outros projetos, com um arquitetura escaláve
 * .NET Core 2.1 
 * EF Core
 * DDD(Design Domain Drive)
-* Fluent
+* FluentValidation
 * WebApi
 
 
