@@ -1,5 +1,5 @@
 # ProjectBaseX
-Será um projeto base para iniciar outros projetos, com um arquitetura escalável e que não fique extremamente complexa.
+Será um projeto base para iniciar outros projetos, com uma arquitetura escalável e que não fique extremamente complexa.
 
 ## Alguns conceitos e tecnologias ultilizadas
 * C# 
