@@ -1,7 +1,8 @@
 # ProjectBaseX
 Será um projeto base para iniciar outros projetos, com um arquitetura escalável e que não fique extremamente complexa.
 
-## Alguns conceitos e tecnologia ultizadas
+## Alguns conceitos e tecnologias ultilizadas
+* C# 
 * .NET Core 2.1 
 * EF Core
 * DDD(Design Domain Drive)
