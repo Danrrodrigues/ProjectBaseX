@@ -18,15 +18,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{398B2CA9-8DCA-4BD4-90AA-44B1E0805541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectBaseX.Api", "ProjectBaseX.Api\ProjectBaseX.Api.csproj", "{4D6B1D60-1E95-44B1-9344-CBF345E401B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectBaseX.Api", "ProjectBaseX.Api\ProjectBaseX.Api.csproj", "{4D6B1D60-1E95-44B1-9344-CBF345E401B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectBaseX.Domain", "ProjectBaseX.Domain\ProjectBaseX.Domain.csproj", "{7279BC4C-9E81-4EAB-80EE-D97722716B64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectBaseX.Domain", "ProjectBaseX.Domain\ProjectBaseX.Domain.csproj", "{7279BC4C-9E81-4EAB-80EE-D97722716B64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectBaseX.Service", "ProjectBaseX.Service\ProjectBaseX.Service.csproj", "{E411BB38-C97B-47ED-A9AB-E2B0CBDC4B55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectBaseX.Service", "ProjectBaseX.Service\ProjectBaseX.Service.csproj", "{E411BB38-C97B-47ED-A9AB-E2B0CBDC4B55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectBaseX.Infra.Data", "ProjectBaseX.Infra.Data\ProjectBaseX.Infra.Data.csproj", "{E37B62DB-EE7D-4D88-82D6-8F412A9291CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectBaseX.Infra.Data", "ProjectBaseX.Infra.Data\ProjectBaseX.Infra.Data.csproj", "{E37B62DB-EE7D-4D88-82D6-8F412A9291CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectBaseX.Infra.CrossCutting", "ProjectBaseX.Infra.CrossCutting\ProjectBaseX.Infra.CrossCutting.csproj", "{E1309479-1BF5-4E7C-B52F-565294709B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectBaseX.Infra.CrossCutting", "ProjectBaseX.Infra.CrossCutting\ProjectBaseX.Infra.CrossCutting.csproj", "{E1309479-1BF5-4E7C-B52F-565294709B87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

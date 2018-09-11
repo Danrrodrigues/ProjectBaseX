@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using ProjectBaseX.Domain.Entities;
 using ProjectBaseX.Infra.Data.Mapping;
+using System.IO;
 
 namespace ProjectBaseX.Infra.Data.Context
 {
@@ -11,9 +13,15 @@ namespace ProjectBaseX.Infra.Data.Context
         public DbSet<User> User { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        {            
+            // get the configuration from the app settings
+            var config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseMySql("Server=servermysqlbasex.mysql.database.azure.com;Port=3306;Database=projectbasex;Uid=mysqldbuser@servermysqlbasex;Pwd=mysqldbSenha10;SslMode=Preferred");
+                optionsBuilder.UseMySql(config.GetConnectionString("ProjectBaseX"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
