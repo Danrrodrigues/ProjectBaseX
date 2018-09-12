@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectBaseX.Api</name>
+    </assembly>
+    <members>
+        <member name="M:ProjectBaseX.Api.Controllers.UserController.Post(ProjectBaseX.Domain.Entities.User)">
+            <summary>
+            Adiciona usuário
+            </summary>
+            <param name="item.name.name"></param>
+            <param email="item.email"></param>
+            <returns>Retorna id</returns>
+        </member>
+        <member name="M:ProjectBaseX.Api.Controllers.UserController.Put(ProjectBaseX.Domain.Entities.User)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectBaseX.Api.Controllers.UserController.Get">
+            <summary>
+            Busca todos os usuários
+            </summary>
+            <returns>Retorna objeto User</returns>
+        </member>
+        <member name="M:ProjectBaseX.Api.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Busca usúario pelo Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

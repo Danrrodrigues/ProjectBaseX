@@ -40,3 +40,6 @@ In project Infra.Data
 
 `Update-Database -verbose`
 
+In Api
+`Install-Package Swashbuckle.AspNetCore`
+

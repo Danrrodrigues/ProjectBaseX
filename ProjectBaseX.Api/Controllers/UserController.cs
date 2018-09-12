@@ -7,11 +7,17 @@ using System;
 namespace ProjectBaseX.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/User")]
+    [Route("api/[controller]")]
     public class UserController : Controller
     {
         private BaseService<User> service = new BaseService<User>();
 
+        /// <summary>
+        /// Adiciona usuário
+        /// </summary>
+        /// <param name="item.name"></param>
+        /// <param email="item.email"></param>
+        /// <returns>Retorna id</returns>
         [HttpPost]
         public IActionResult Post([FromBody] User item)
         {
@@ -31,6 +37,11 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public IActionResult Put([FromBody] User item)
         {
@@ -69,6 +80,10 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Busca todos os usuários
+        /// </summary>
+        /// <returns>Retorna objeto User</returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -82,6 +97,11 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Busca usúario pelo Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
