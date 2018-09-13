@@ -6,6 +6,6 @@ namespace ProjectBaseX.Domain.Entities
     {
         public Guid Id { get; set; } = Guid.NewGuid();
 
-        public DateTime? CreationDate { get; set; }
+        public DateTime? CreationDate { get; set; } = DateTime.Now;
     }
 }
