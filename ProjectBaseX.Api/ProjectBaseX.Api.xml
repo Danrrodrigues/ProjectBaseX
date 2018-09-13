@@ -19,6 +19,13 @@
             <param name="item"></param>
             <returns></returns>
         </member>
+        <member name="M:ProjectBaseX.Api.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Exclui o usuári pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:ProjectBaseX.Api.Controllers.UserController.Get">
             <summary>
             Busca todos os usuários
@@ -31,6 +38,14 @@
             </summary>
             <param name="id"></param>
             <returns></returns>
+        </member>
+        <member name="M:ProjectBaseX.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
         </member>
     </members>
 </doc>

@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\DanRepository\Projetos\ProjectBaseX\ProjectBaseX\ProjectBaseX.Api\ProjectBaseX.Api.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\ProjectBaseX.Api.xml</DocumentationFile>
+    <OutputPath>bin\Debug\netcoreapp2.1\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.1\ProjectBaseX.Api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -60,7 +60,11 @@ namespace ProjectBaseX.Api.Controllers
                 return BadRequest(ex);
             }
         }
-
+        /// <summary>
+        /// Exclui o usuário pelo ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
