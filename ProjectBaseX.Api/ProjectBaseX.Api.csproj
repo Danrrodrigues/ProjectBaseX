@@ -11,7 +11,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.1\ProjectBaseX.Api.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netcoreapp2.1\ProjectBaseX.Api.xml</DocumentationFile>
+    <OutputPath>bin\Release\netcoreapp2.1\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

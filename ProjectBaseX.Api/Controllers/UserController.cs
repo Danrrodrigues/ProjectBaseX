@@ -61,7 +61,7 @@ namespace ProjectBaseX.Api.Controllers
             }
         }
         /// <summary>
-        /// Exclui o usuário pelo ID
+        /// Exclui o usuário pelo Id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
