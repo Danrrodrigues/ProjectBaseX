@@ -21,7 +21,7 @@ namespace ProjectBaseX.Infra.Data.Context
                 .Build();
 
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseMySql(config.GetConnectionString("ProjectBaseX"));
+                optionsBuilder.UseMySql(config.GetConnectionString("MYSQLCONNSTR_defaultConnection"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
