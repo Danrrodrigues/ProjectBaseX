@@ -1,6 +1,9 @@
 # ProjectBaseX
 Será um projeto base para iniciar outros projetos, com uma arquitetura escalável e que não fique extremamente complexa.
 
+[![Build status](https://danrrodrigues.visualstudio.com/ProjectBaseX/_apis/build/status/ProjectBaseX-Azure%20Web%20App%20for%20ASP.NET-CI)](https://danrrodrigues.visualstudio.com/ProjectBaseX/_build/latest?definitionId=1)
+
+
 ## Alguns conceitos e tecnologias ultilizadas
 * C# 
 * .NET Core 2.1 
@@ -41,5 +44,6 @@ In project Infra.Data
 `Update-Database -verbose`
 
 In Api
+
 `Install-Package Swashbuckle.AspNetCore`
 
