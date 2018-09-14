@@ -24,6 +24,11 @@ namespace ProjectBaseX.Infra.Data.Mapping
                 .HasMaxLength(100)
                 .IsRequired()
                 .HasColumnName("Email");
+
+            builder.Property(c => c.AccessKey)
+                .HasColumnType("varchar(32)")
+                .HasMaxLength(32) 
+                .HasColumnName("AccessKey");
         }
     }
 }

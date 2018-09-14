@@ -1,6 +1,7 @@
 ﻿using ProjectBaseX.Domain.Entities;
 using ProjectBaseX.Domain.Interfaces;
 using ProjectBaseX.Infra.Data.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -34,6 +35,10 @@ namespace ProjectBaseX.Infra.Data.Repository
         }
 
         public T Select(int id)
+        {
+            return context.Set<T>().Find(id);
+        }
+        public T Select(Guid id)
         {
             return context.Set<T>().Find(id);
         }

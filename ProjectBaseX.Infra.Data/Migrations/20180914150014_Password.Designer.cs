@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectBaseX.Infra.Data.Context;
 
 namespace ProjectBaseX.Infra.Data.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    partial class MySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20180914150014_Password")]
+    partial class Password
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,11 +24,6 @@ namespace ProjectBaseX.Infra.Data.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Id");
-
-                    b.Property<string>("AccessKey")
-                        .HasColumnName("AccessKey")
-                        .HasColumnType("varchar(32)")
-                        .HasMaxLength(32);
 
                     b.Property<DateTime?>("CreationDate");
 
@@ -41,6 +38,12 @@ namespace ProjectBaseX.Infra.Data.Migrations
                         .HasColumnName("Name")
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnName("Password")
+                        .HasColumnType("varchar(400)")
+                        .HasMaxLength(400);
 
                     b.HasKey("Id");
 

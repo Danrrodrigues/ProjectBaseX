@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProjectBaseX.Domain.Entities;
 using ProjectBaseX.Service.Services;
 using ProjectBaseX.Service.Validators;
@@ -6,6 +7,7 @@ using System;
 
 namespace ProjectBaseX.Api.Controllers
 {
+    [Authorize("Bearer")]
     [Produces("application/json")]
     [Route("api/[controller]")]
     public class UserController : Controller
@@ -60,6 +62,7 @@ namespace ProjectBaseX.Api.Controllers
                 return BadRequest(ex);
             }
         }
+
         /// <summary>
         /// Exclui o usuário pelo Id
         /// </summary>
@@ -107,11 +110,11 @@ namespace ProjectBaseX.Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public IActionResult Get(Guid id)
         {
             try
             {
-                return new ObjectResult(service.Get(id));
+                return new ObjectResult(service.GetByGuid(id));
             }
             catch (ArgumentException ex)
             {
