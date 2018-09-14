@@ -44,6 +44,13 @@ namespace ProjectBaseX.Service.Services
 
             return repository.Select(id);
         }
+        public T GetByGuid(Guid id)
+        {
+            if (id == Guid.Empty)
+                throw new ArgumentException("The id can't be zero.");
+
+            return repository.Select(id);
+        }
 
         private void Validate(T obj, AbstractValidator<T> validator)
         {

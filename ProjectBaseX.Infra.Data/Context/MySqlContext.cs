@@ -17,7 +17,7 @@ namespace ProjectBaseX.Infra.Data.Context
             // get the configuration from the app settings
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile("appsettings.json")  //TODO: Pendente configuração correto com env development
                 .Build();
 
             if (!optionsBuilder.IsConfigured)
