@@ -4,7 +4,7 @@ Será um projeto base para iniciar outros projetos, com uma arquitetura escaláv
 [![Build status](https://danrrodrigues.visualstudio.com/ProjectBaseX/_apis/build/status/ProjectBaseX-Azure%20Web%20App%20for%20ASP.NET-CI)](https://danrrodrigues.visualstudio.com/ProjectBaseX/_build/latest?definitionId=1)
 
 
-## Alguns conceitos e tecnologias ultilizadas
+## Alguns conceitos e tecnologias utilizadas
 * C# 
 * .NET Core 2.1 
 * EF Core
