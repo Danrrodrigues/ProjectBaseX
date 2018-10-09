@@ -1,5 +1,5 @@
 # ProjectBaseX
-Será um projeto base para iniciar outros projetos, com uma arquitetura escalável e que não fique extremamente complexa.
+Será um projeto base para iniciar outros projetos, com uma arquitetura escalável e que não fique muito complexa.
 
 [![Build status](https://danrrodrigues.visualstudio.com/ProjectBaseX/_apis/build/status/ProjectBaseX-Azure%20Web%20App%20for%20ASP.NET-CI)](https://danrrodrigues.visualstudio.com/ProjectBaseX/_build/latest?definitionId=1)
 
@@ -39,9 +39,7 @@ In project Infra.Data
 
 `Update-Database -verbose`
 
-`Add-Migration Custom`
-
-`Update-Database -verbose`
+`Add-Migration Custom` 
 
 In Api
 
@@ -53,4 +51,5 @@ In Api
 https://medium.com/@renato.groffe/asp-net-core-2-0-autentica%C3%A7%C3%A3o-em-apis-utilizando-jwt-json-web-tokens-4b1871efd
 
 
+http://www.eduardopires.net.br/2014/10/tutorial-asp-net-mvc-5-ddd-ef-automapper-ioc-dicas-e-truques/
 

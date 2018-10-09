@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
 using ProjectBaseX.Api.Auth;
+using ProjectBaseX.Api.AutoMapper;
 using ProjectBaseX.Domain.Entities;
 using ProjectBaseX.Service.Services;
 using Swashbuckle.AspNetCore.Swagger;
@@ -18,6 +19,7 @@ using System.Linq;
 
 namespace ProjectBaseX.Api
 {
+#pragma warning disable 1591
     public class Startup
     {
         private BaseService<User> service = new BaseService<User>();
@@ -76,6 +78,8 @@ namespace ProjectBaseX.Api
                 paramsValidation.ClockSkew = TimeSpan.Zero;
             });
 
+            AutoMapperConfiguration.Configure();
+
             // Ativa o uso do token como forma de autorizar o acesso
             // a recursos deste projeto
             services.AddAuthorization(auth =>
@@ -87,7 +91,6 @@ namespace ProjectBaseX.Api
 
             services.AddMvc();
 
-
             // Configurando o serviço de documentação do Swagger
             services.AddSwaggerGen(c =>
             {
@@ -96,7 +99,7 @@ namespace ProjectBaseX.Api
                     {
                         Title = "ProjectBaseX - Api",
                         Version = "v1",
-                        Description = "Projeto base para iniciar outros projetos, com uma arquitetura escalável e que não fique extremamente complexa.e",
+                        Description = "Projeto base para iniciar outros projetos, com uma arquitetura escalável e que não fique muito complexa.",
                         Contact = new Contact
                         {
                             Name = "Danilo Rodrigues",
@@ -142,4 +145,6 @@ namespace ProjectBaseX.Api
             });
         }
     }
+
+#pragma warning disable 1591
 }

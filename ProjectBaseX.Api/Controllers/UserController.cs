@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using ProjectBaseX.Api.ViewsModels;
 using ProjectBaseX.Domain.Entities;
 using ProjectBaseX.Service.Services;
 using ProjectBaseX.Service.Validators;
@@ -7,6 +9,9 @@ using System;
 
 namespace ProjectBaseX.Api.Controllers
 {
+    /// <summary>
+    /// Classe de usuário 
+    /// </summary>
     [Authorize("Bearer")]
     [Produces("application/json")]
     [Route("api/[controller]")]
@@ -17,17 +22,23 @@ namespace ProjectBaseX.Api.Controllers
         /// <summary>
         /// Adiciona usuário
         /// </summary>
-        /// <param name="item.name"></param>
-        /// <param email="item.email"></param>
+        /// <param name="model.name"></param>
+        /// <param email="model.email"></param>
         /// <returns>Retorna id</returns>
         [HttpPost]
-        public IActionResult Post([FromBody] User item)
+        [AllowAnonymous] 
+        public IActionResult Post(UserViewModel model)
         {
             try
             {
-                service.Post<UserValidator>(item);
+                //TODO:Pendente configuração de erros da view
+                //if (!ModelState.IsValid) return BadRequest(ModelState.ConfigErros());
 
-                return new ObjectResult(item.Id);
+                var user = Mapper.Map<User>(model);
+
+                service.Post<UserValidator>(user);
+
+                return new ObjectResult(user.Id);
             }
             catch (ArgumentNullException ex)
             {
